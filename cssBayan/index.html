@@ -4,45 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CSSBayan</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="wrapper">
-      <h1>CSS Bayan</h1>
-      <div class="tab">
-        <input id="mem-one" type="checkbox" name="tabs" />
-        <label for="mem-one">Learn to create a website</label>
+    <div class="cssBayan">
+      <div class="wrapper">
+        <h1 class="title">CSS Bayan</h1>
+      <div class="accordion">
+        <div class="accordion-item">
+        <input id="mem-one" type="radio" name="accordion-radio" checked="checked" />
+        <label for="mem-one" class="mem-label">
+        <div class="accordion-header">
+        <h2> Learn to create a website</h2>
+        <div class="mem-icon">+</div>
+        </div>
         <div class="mem-content">
           <img
             src="/cssBayan/cssBayan/assets/1.jpg"
             alt="Learn to create a website"
-          />
+           class="img"/>
         </div>
+    </label>
       </div>
-      <div class="tab">
-        <input id="mem-one" type="checkbox" name="tabs" />
-        <label for="mem-one">Add HTML to it</label>
+      <div class="accordion-item">
+        <input id="mem-two" type="radio" name="accordion-radio" />
+        <label for="mem-two" class="mem-label">
+        <div class="accordion-header">
+        <h2> Add HTML to it</h2>
+        <div class="mem-icon">+</div>
+        </div>
         <div class="mem-content">
-          <img src="/cssBayan/cssBayan/assets/2.jpg" alt="Add HTML to it" />
+          <img
+            src="/cssBayan/cssBayan/assets/2.jpg"
+            alt="Learn to create a website"
+           class="img"/>
         </div>
+    </label>
       </div>
-      <div class="tab">
-        <input id="mem-one" type="checkbox" name="tabs" />
-        <label for="mem-one">Add CSS to it</label>
+      <div class="accordion-item">
+        <input id="mem-three" type="radio" name="accordion-radio" />
+        <label for="mem-three" class="mem-label">
+        <div class="accordion-header">
+        <h2> Add CSS to it</h2>
+        <div class="mem-icon">+</div>
+        </div>
         <div class="mem-content">
-          <img src="/cssBayan/cssBayan/assets/3.jpg" alt="Add CSS to it" />
+          <img
+            src="/cssBayan/cssBayan/assets/3.jpg"
+            alt="Learn to create a website"
+           class="img"/>
         </div>
+    </label>
       </div>
-      <div class="tab">
-        <input id="mem-one" type="checkbox" name="tabs" />
-        <label for="mem-one">ADD CSS TO ITTTTTTTT</label>
+      <div class="accordion-item">
+        <input id="mem-four" type="radio" name="accordion-radio" />
+        <label for="mem-four" class="mem-label">
+        <div class="accordion-header">
+        <h2> ADD CSS TO ITTTTTTTT</h2>
+        <div class="mem-icon">+</div>
+        </div>
         <div class="mem-content">
           <img
             src="/cssBayan/cssBayan/assets/4.jpg"
-            alt="ADD CSS TO ITTTTTTTT"
-          />
+            alt="Learn to create a website"
+           class="img"/>
         </div>
+    </label>
       </div>
+    </div>
     </div>
   </body>
 </html>
