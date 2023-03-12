@@ -14,7 +14,7 @@
 body {
   font-family: "Inter";
   font-style: normal;
-  font-size: 1rem;
+  font-size: 100%;
   max-width: 80%;
   margin: auto;
 }
@@ -65,13 +65,13 @@ input:checked + .mem-label {
 }
 
 input:checked + label .mem-content .img {
-  height: fit-content;
+  height: auto;
   width: 70%;
   opacity: 1;
 }
 
 input:checked + label .mem-content {
-  height: fit-content;
+  height: auto;
   width: 70%;
 }
 input:checked + label .accordion-header .mem-icon {
@@ -101,13 +101,13 @@ label {
 }
 
 .mem-label:hover .mem-content .img {
-  height: fit-content;
+  height: auto;
   width: 70%;
   opacity: 1;
 }
 
 .mem-label:hover .mem-content {
-  height: fit-content;
+  height: auto;
   width: 70%;
 }
 
@@ -162,12 +162,12 @@ h2 {
 
 @media (hover: hover) {
   .accordion-item:hover > .mem-content .img {
-    height: fit-content;
+    height: auto;
     width: 70%;
     opacity: 1;
   }
   .accordion-item:hover > .mem-content {
-    height: fit-content;
+    height: auto;
     width: 70%;
   }
 }
