@@ -26,7 +26,7 @@ body {
   justify-content: center;
   margin: 2rem 0;
   padding: 0 2rem;
-  color: rgb(106, 78, 0);
+  color: black;
 }
 @media (min-width: 820px) {
   body {
@@ -50,10 +50,10 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 2rem;
-  color: black;
+  color: rgb(106, 78, 0);
 }
 .accordion:hover {
-  color: rgb(106, 78, 0);
+  color: black;
 }
 
 input {
@@ -61,7 +61,7 @@ input {
   visibility: hidden;
 }
 input:checked + .mem-label {
-  color: rgb(106, 78, 0);
+  color: black;
 }
 
 input:checked + label .mem-content .img {
@@ -74,8 +74,9 @@ input:checked + label .mem-content {
   height: auto;
   width: 70%;
 }
-input:checked + label .accordion-header .mem-icon {
+input:checked + label .accordion-header svg {
   transform: rotate(-45deg);
+  
 }
 
 label {
@@ -94,9 +95,12 @@ label {
 
 .accordion-item label:active .accordion-header {
   color: rgb(106, 78, 0);
+  
 }
-
-.accordion-item label:active .accordion-header .mem-icon {
+.accordion-item label:active svg {
+    fill: rgb(106, 78, 0);
+}
+.accordion-item label:active .accordion-header svg {
   transform: rotate(45deg);
 }
 
@@ -111,7 +115,7 @@ label {
   width: 70%;
 }
 
-.mem-label:hover .accordion-header .mem-icon {
+.mem-label:hover .accordion-header svg {
   transform: rotate(-45deg);
 }
 
@@ -125,7 +129,7 @@ label {
   padding: 0.8rem 0;
 }
 
-.accordion:hover .accordion-header .mem-icon {
+.accordion:hover .accordion-header svg {
   visibility: visible;
 }
 
@@ -137,9 +141,10 @@ label {
   padding: 0;
 }
 
-.accordion-item:hover .accordion-header .mem-icon {
+.accordion-item:hover .accordion-header svg {
   transform: rotate(45deg);
 }
+
 h2 {
   margin: 0;
   font-size: 100%;
@@ -151,6 +156,14 @@ h2 {
   padding-top: 0.2rem;
   justify-content: center;
   transition: all 0.3s;
+}
+svg {
+    width: 1rem;
+    fill: black;
+    visibility: hidden;
+}
+svg:hover {
+    visibility: visible;
 }
 
 .img {
