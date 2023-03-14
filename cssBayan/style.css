@@ -20,7 +20,6 @@ body {
 }
 
 .title {
-  /* font-size: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,7 +33,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 2rem;
+  margin: 0 1rem;
   color: rgb(106, 78, 0);
 }
 
@@ -77,7 +76,7 @@ label {
 }
 .accordion-item label:active svg {
   fill: rgb(106, 78, 0);
-  transition: all 0.3s;
+  transition: all 0.3s; 
 }
 .accordion-item label:active .accordion-header svg {
   transform: rotate(45deg);
@@ -124,19 +123,19 @@ h2 {
 svg {
   width: 1rem;
   fill: black;
-  animation: move2 2.5s ease infinite;
-  /* transition: all 0.3s; */
-  /* visibility: hidden;  */
+  /* animation: move2 2.5s ease infinite;  */
 }
-/* svg:active {
-    visibility: visible;
-} */
-
 .img {
   width: 0;
   height: 0;
   opacity: 0;
   transition: all 0.3s;
+}
+@media screen and (min-width: 320px) {
+    input:checked + label .mem-content .img {
+        height: auto;
+        width: 100%;
+      }
 }
 @media (min-width: 820px) {
   body {
@@ -161,10 +160,13 @@ svg {
     height: auto;
     width: 70%;
   }
-
+  input:checked + label .mem-content .img {
+    height: auto;
+    width: 70%;
+  }
   svg:hover {
     visibility: visible;
-    transition: all 500ms ease;
+    /* transition: all 500ms ease; */
   }
   .accordion-item:hover .accordion-header svg {
     transform: rotate(45deg);
@@ -172,6 +174,7 @@ svg {
   .accordion:hover .accordion-header svg {
     visibility: visible;
     transition: all 500ms ease;
+    animation: ani 0.7s forwards;
   }
   .mem-label:hover .mem-content .img {
     height: auto;
@@ -194,3 +197,7 @@ svg {
     color: black;
   }
 }
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
